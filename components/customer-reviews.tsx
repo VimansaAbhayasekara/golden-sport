@@ -10,56 +10,56 @@ import Image from "next/image"
 const customerReviews = [
   {
     id: 1,
-    name: "Alex Johnson",
+    name: "Sandun Gamage",
     review:
       "The basketball I purchased from Golden Sports has amazing grip and durability. It's perfect for both indoor and outdoor courts!",
     rating: 5,
-    photoUrl: "/placeholder.svg?height=400&width=400&text=Review+Photo+1",
+    photoUrl: "/images/customers/1.jpg",
     productName: "Pro Basketball",
   },
   {
     id: 2,
-    name: "Sarah Williams",
+    name: "Dinath Amarasinghe",
     review:
       "I've been using the Ultra Running Shoes for my marathon training, and they've been a game-changer. So comfortable and supportive!",
     rating: 5,
-    photoUrl: "/placeholder.svg?height=400&width=400&text=Review+Photo+2",
+    photoUrl: "/images/customers/2.jpg",
     productName: "Ultra Running Shoes",
   },
   {
     id: 3,
-    name: "Michael Chen",
+    name: "Lahiru Gunasekara",
     review:
       "The Smart Fitness Tracker has helped me stay on top of my workouts. The heart rate monitoring is incredibly accurate!",
     rating: 4,
-    photoUrl: "/placeholder.svg?height=400&width=400&text=Review+Photo+3",
+    photoUrl: "/images/customers/3.jpg",
     productName: "Smart Fitness Tracker",
   },
   {
     id: 4,
-    name: "Emily Rodriguez",
+    name: "Kasun Jayawardhana",
     review:
       "I bought the Tennis Racket Pro for my daughter who's starting tennis lessons. The quality is excellent, and it's perfect for beginners!",
     rating: 5,
-    photoUrl: "/placeholder.svg?height=400&width=400&text=Review+Photo+4",
+    photoUrl: "/images/customers/4.jpg",
     productName: "Tennis Racket Pro",
   },
   {
     id: 5,
-    name: "David Kim",
+    name: "Himeth Gamage",
     review:
       "The Premium Football has the perfect weight and feel. It's become our go-to for weekend games with friends.",
     rating: 5,
-    photoUrl: "/placeholder.svg?height=400&width=400&text=Review+Photo+5",
+    photoUrl: "/images/customers/5.jpg",
     productName: "Premium Football",
   },
   {
     id: 6,
-    name: "Jessica Thompson",
+    name: "Nisura Alwis",
     review:
       "I'm impressed with the quality of the Adjustable Dumbbells. They're easy to adjust and perfect for my home gym setup.",
     rating: 4,
-    photoUrl: "/placeholder.svg?height=400&width=400&text=Review+Photo+6",
+    photoUrl: "/images/customers/6.jpg",
     productName: "Adjustable Dumbbells",
   },
 ]
@@ -105,7 +105,7 @@ export function CustomerReviews() {
       setTimeout(() => {
         startTime = null
         animationId = requestAnimationFrame(scroll)
-      }, 5000)
+      }, 1000)
     }
 
     scrollContainer.addEventListener("mouseenter", handleInteraction)
@@ -166,7 +166,7 @@ export function CustomerReviews() {
 
                     <p className="mb-4 text-foreground/90">{review.review}</p>
 
-                    <div className="relative h-48 w-full rounded-md overflow-hidden">
+                    <div className="relative h-80 w-full rounded-md overflow-hidden">
                       <Image
                         src={review.photoUrl || "/placeholder.svg"}
                         alt={`${review.name}'s review photo`}

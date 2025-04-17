@@ -20,20 +20,15 @@ export default function AboutPage() {
     <main className="min-h-screen">
       <Navbar />
 
-      <div className="pt-24 pb-16">
+      <div className="pt-0 pb-16">
         {/* Hero Section */}
         <div className="relative h-[70vh] w-full">
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-      <source src="/videos/nike1.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+                <Image
+                    src="/back5.jpg"
+                    alt="Discover Golden Sports"
+                    fill
+                    className="object-cover"
+                />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
           <div className="absolute inset-0 flex items-center">
             <div className="container mx-auto px-4">

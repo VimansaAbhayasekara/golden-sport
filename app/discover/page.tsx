@@ -9,11 +9,11 @@ export default function DiscoverPage() {
     <main className="min-h-screen">
       <Navbar />
 
-      <div className="pt-24 pb-16">
+      <div className="pt-0 pb-16">
         {/* Hero Section */}
-        <div className="relative h-[60vh] w-full">
+        <div className="relative h-[70vh] w-full">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/back2.jpg"
             alt="Discover Golden Sports"
             fill
             className="object-cover"
@@ -33,20 +33,21 @@ export default function DiscoverPage() {
         <div className="container mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+              <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
               <p className="text-muted-foreground mb-4">
-                Golden Sports was founded in 2015 by a group of passionate athletes who were frustrated with the quality
-                of sports equipment available on the market. We set out to create premium sports accessories that would
-                help athletes of all levels perform at their best.
+              At Golden Sports, our vision is to empower athletes of all levels with high-quality, innovative sports 
+              accessories that elevate their performance and confidence. We believe that the right gear can make a real 
+              difference, whether you're stepping onto the field for the first time or competing at a professional level.
               </p>
               <p className="text-muted-foreground mb-4">
-                What started as a small operation in a garage has grown into a global brand trusted by professional
-                athletes and sports enthusiasts around the world. Our commitment to quality, innovation, and performance
-                remains at the core of everything we do.
+              Our mission is to become the trusted destination for sports enthusiasts who value reliability, style, and
+              cutting-edge functionality. Every product we offer is designed with the athlete in mind—crafted from premium
+              materials and built to perform under pressure.
               </p>
               <p className="text-muted-foreground">
-                Today, Golden Sports continues to push the boundaries of what's possible in sports equipment, combining
-                cutting-edge technology with premium materials to create products that help you elevate your game.
+              We are committed to continuous innovation, exceptional customer experiences, and supporting a community 
+              of individuals passionate about an active lifestyle. As we grow, our focus remains the same: to help
+              you reach your full potential and push the boundaries of what’s possible in your game.
               </p>
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden">
