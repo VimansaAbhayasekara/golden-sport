@@ -7,12 +7,12 @@ import { Instagram } from "lucide-react"
 
 // Mock Instagram posts
 const instagramPosts = [
-  { id: 1, imageUrl: "/placeholder.svg?height=400&width=400", likes: 245 },
-  { id: 2, imageUrl: "/placeholder.svg?height=400&width=400", likes: 189 },
-  { id: 3, imageUrl: "/placeholder.svg?height=400&width=400", likes: 321 },
-  { id: 4, imageUrl: "/placeholder.svg?height=400&width=400", likes: 176 },
-  { id: 5, imageUrl: "/placeholder.svg?height=400&width=400", likes: 298 },
-  { id: 6, imageUrl: "/placeholder.svg?height=400&width=400", likes: 210 },
+  { id: 1, imageUrl: "/post1.jpg?height=400&width=400", likes: 245 },
+  { id: 2, imageUrl: "/post6.jpg?height=400&width=400", likes: 189 },
+  { id: 3, imageUrl: "/post3.jpg?height=400&width=400", likes: 321 },
+  { id: 4, imageUrl: "/post4.jpg?height=400&width=400", likes: 176 },
+  { id: 5, imageUrl: "/post2.jpg?height=400&width=400", likes: 298 },
+  { id: 6, imageUrl: "/post5.jpg?height=400&width=400", likes: 210 },
 ]
 
 export function InstagramFeed() {

@@ -4,33 +4,33 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 const brands = [
-  { name: "Nike", logo: "/placeholder.svg?height=60&width=120&text=NIKE" },
-  { name: "Adidas", logo: "/placeholder.svg?height=60&width=120&text=ADIDAS" },
-  { name: "Under Armour", logo: "/placeholder.svg?height=60&width=120&text=UNDER+ARMOUR" },
-  { name: "Puma", logo: "/placeholder.svg?height=60&width=120&text=PUMA" },
-  { name: "New Balance", logo: "/placeholder.svg?height=60&width=120&text=NEW+BALANCE" },
+  { name: "Brook", logo: "/brooks.svg?height=60&width=60&text=NIKE" },
+  { name: "New Balance", logo: "/nb.svg?height=60&width=60&text=ADIDAS" },
+  { name: "Fila", logo: "/fila.svg?height=60&width=60&text=UNDER+ARMOUR" },
+  { name: "Liverpool", logo: "/liverpool.svg?height=60&width=60&text=PUMA" },
+  { name: "Wilson", logo: "/wilson.svg?height=60&width=60&text=NEW+BALANCE" },
 ]
 
 const testimonials = [
   {
     id: 1,
-    name: "Michael Johnson",
-    role: "Professional Basketball Player",
-    image: "/placeholder.svg?height=400&width=300&text=Athlete+1",
+    name: "Isitha Wijesundara",
+    role: "Cricket Player",
+    image: "/athl5.jpg",
     quote: "Golden Sports equipment has taken my game to the next level. The quality and performance are unmatched.",
   },
   {
     id: 2,
-    name: "Sarah Williams",
-    role: "Olympic Gold Medalist",
-    image: "/placeholder.svg?height=400&width=300&text=Athlete+2",
+    name: "Kusal Mendis",
+    role: "Professional Cricket Player",
+    image: "/athl1.jpeg",
     quote: "I've been using Golden Sports gear for years. Their products are essential to my training and competition.",
   },
   {
     id: 3,
-    name: "David Chen",
-    role: "Football Coach",
-    image: "/placeholder.svg?height=400&width=300&text=Athlete+3",
+    name: "Pathum Nissanka",
+    role: "Professional Cricket Player",
+    image: "/athl6.jpg",
     quote:
       "My team's performance improved dramatically after switching to Golden Sports equipment. Highly recommended!",
   },
@@ -96,7 +96,6 @@ export function BrandsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="grayscale hover:grayscale-0 transition-all duration-300"
             >
               <Image
                 src={brand.logo || "/placeholder.svg"}

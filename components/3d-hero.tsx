@@ -17,14 +17,25 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type * as THREE from "three"
 import { EffectComposer, Bloom, ChromaticAberration } from "@react-three/postprocessing"
-
-
+import Image from "next/image"
 
 export function Hero3D() {
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-black">
-      <div className="absolute inset-0 z-10 hero-gradient" />
+    <div className="relative h-[80vh] w-full overflow-hidden bg-black">
+      {/* Image Background */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/back4.jpg"
+          alt="Hero Background"
+          fill
+          className="object-cover"
+          priority
+          quality={100}
+        />
+        <div className="absolute inset-0 bg-black/30" /> {/* Dark overlay for better text contrast */}
+      </div>
 
+      <div className="absolute inset-0 z-10 hero-gradient" />
 
       <div className="relative z-20 flex h-full items-center">
         <div className="container mx-auto px-4">

@@ -7,7 +7,20 @@ import Link from "next/link"
 
 export function FootballSection() {
   return (
-    <section className="bg-black py-24 relative overflow-hidden">
+    <section className="bg-black py-24 relative overflow-hidden min-h-screen">
+      {/* Full-cover background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/back6.jpg"
+          alt="Football Background"
+          fill
+          className="object-cover"
+          priority
+          quality={100}
+        />
+        <div className="absolute inset-0 bg-black/30" /> {/* Dark overlay for better text contrast */}
+      </div>
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center">
           <motion.h2
@@ -20,23 +33,6 @@ export function FootballSection() {
             POWER
           </motion.h2>
 
-          <div className="relative w-full max-w-3xl mx-auto mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="aspect-square relative rounded-3xl overflow-hidden"
-            >
-              <Image
-                src="/back6.jpg"
-                alt="Professional Football"
-                fill
-                className="object-cover"
-              />
-            </motion.div>
-          </div>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +40,7 @@ export function FootballSection() {
             viewport={{ once: true }}
             className="text-center max-w-2xl mx-auto"
           >
-            <h3 className="text-3xl font-bold mb-4">Unleash Your Game Potential</h3>
+            <h3 className="text-3xl font-bold mb-4 text-white">Unleash Your Game Potential</h3>
             <p className="text-white/80 mb-8">
               From professional-grade footballs to advanced training equipment, elevate your performance with our
               premium sports gear.
@@ -57,9 +53,6 @@ export function FootballSection() {
           </motion.div>
         </div>
       </div>
-
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black" />
     </section>
   )
 }
