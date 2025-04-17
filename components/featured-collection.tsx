@@ -37,7 +37,7 @@ export function FeaturedCollection() {
             className="relative aspect-[4/3] rounded-lg overflow-hidden"
           >
             <Image
-              src="/combo3.jpg"
+              src="/combo3.JPG"
               alt="Pro Basketball Collection"
               fill
               className="object-cover"
