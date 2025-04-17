@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 
 const brands = [
   { name: "Brook", logo: "/brooks.svg?height=60&width=60&text=NIKE" },
@@ -31,10 +32,10 @@ const testimonials = [
     name: "Pathum Nissanka",
     role: "Professional Cricket Player",
     image: "/athl6.jpg",
-    quote:
-      "My team's performance improved dramatically after switching to Golden Sports equipment. Highly recommended!",
+    quote: "My team's performance improved dramatically after switching to Golden Sports equipment. Highly recommended!",
   },
 ]
+
 
 export function BrandsSection() {
   return (
@@ -108,25 +109,6 @@ export function BrandsSection() {
           ))}
         </div>
 
-        <div className="flex justify-center mt-16 space-x-6">
-          {["tiktok", "instagram", "snapchat", "youtube", "facebook"].map((platform) => (
-            <motion.div
-              key={platform}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
-            >
-              <Image
-                src={`/placeholder.svg?height=24&width=24&text=${platform}`}
-                alt={platform}
-                width={24}
-                height={24}
-              />
-            </motion.div>
-          ))}
-        </div>
       </div>
 
       {/* Background gradient */}
