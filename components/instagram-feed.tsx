@@ -11,7 +11,7 @@ const instagramPosts = [
   { id: 2, imageUrl: "/post6.jpg?height=400&width=400", likes: 189 },
   { id: 3, imageUrl: "/post3.jpg?height=400&width=400", likes: 321 },
   { id: 4, imageUrl: "/post4.jpg?height=400&width=400", likes: 176 },
-  { id: 5, imageUrl: "/post2.jpg?height=400&width=400", likes: 298 },
+  { id: 5, imageUrl: "/post2.png?height=400&width=400", likes: 298 },
   { id: 6, imageUrl: "/post5.jpg?height=400&width=400", likes: 210 },
 ]
 
