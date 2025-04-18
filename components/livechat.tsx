@@ -121,7 +121,7 @@ export function LiveChat() {
       {/* Chat Box */}
       {isOpen && (
   <Card className={`
-    fixed bottom-24 right-8 flex flex-col z-50 shadow-xl
+    fixed bottom-24 right-4 flex flex-col z-50 shadow-xl
     w-[calc(100vw-2rem)] max-w-md
     h-[calc(100vh-10rem)] max-h-[600px]
     sm:w-[400px] sm:h-[500px]
