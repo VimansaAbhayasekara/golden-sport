@@ -8,6 +8,7 @@ import { ShoppingCart, Heart, Share2 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import { ShareButton } from "@/components/share-button"
 
 export const revalidate = 3600 // Revalidate at most every hour
 
@@ -222,10 +223,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
                     <Heart className="h-4 w-4 mr-2" />
                     Add to Wishlist
                   </Button>
-                  <Button variant="outline" size="sm" className="rounded-full">
-                    <Share2 className="h-4 w-4 mr-2" />
-                    Share
-                  </Button>
+                  <ShareButton product={{
+                    name: product.name,
+                    description: product.description,
+                    price: product.price,
+                    sale_price: product.sale_price,
+                    imageUrl: product.images?.[0]?.url || '/placeholder.svg'
+                  }} />
                 </div>
               </div>
             </div>
