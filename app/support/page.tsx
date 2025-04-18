@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MessageSquare } from "lucide-react"
+import { LiveChat } from "@/components/livechat"
 
 export default function SupportPage() {
   return (
@@ -57,7 +58,7 @@ export default function SupportPage() {
                 <p className="text-muted-foreground mb-4">
                   Chat with our support team in real-time. Available 24/7 for quick assistance.
                 </p>
-                <Button className="rounded-full">Start Chat</Button>
+                <LiveChat />
               </CardContent>
             </Card>
           </div>
